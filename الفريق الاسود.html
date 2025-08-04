@@ -98,7 +98,7 @@
     function checkWin() {
       const winState = [...Array(8).keys()].map(x => x + 1).concat([null]);
       const won = tiles.every((val, idx) => val === winState[idx]);
-      message.textContent = won ? "اذهب الى النافورة و ادور على كارت بلون فريقك" : "";
+      message.textContent = won ? "اذهب الى النافورة و دور على كارت بلون فريقك" : "";
     }
 
     shuffle(tiles);
@@ -106,5 +106,6 @@
   </script>
 </body>
 </html>
+
 
 
